@@ -1,4 +1,4 @@
-package main
+package moviedb
 
 import (
 	"fmt"
@@ -101,41 +101,5 @@ func crawl(body io.Reader) []Show {
 				}
 			}
 		}
-	}
-}
-
-func main() {
-	db := NewMovieDB()
-	fmt.Println("upcoming movies")
-	for _, show := range db.GetUpcomingMovies() {
-		fmt.Println(show)
-	}
-	fmt.Println("popular movies")
-	for _, show := range db.GetPopularMovies() {
-		fmt.Println(show)
-	}
-	fmt.Println("top rated movies")
-	for _, show := range db.GetTopRatedMovies() {
-		fmt.Println(show)
-	}
-	fmt.Println("now playing movies")
-	for _, show := range db.GetNowPlayingMovies() {
-		fmt.Println(show)
-	}
-	fmt.Println("top rated shows")
-	for _, show := range db.GetTopRatedShows() {
-		fmt.Println(show)
-	}
-	fmt.Println("airing today shows")
-	for _, show := range db.GetAiringTodayShows() {
-		fmt.Println(show)
-	}
-	fmt.Println("on tv shows")
-	for _, show := range db.GetOnTVShows() {
-		fmt.Println(show)
-	}
-	fmt.Println("popular shows")
-	for _, show := range db.GetPopularTVShows() {
-		fmt.Println(show)
 	}
 }
