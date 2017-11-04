@@ -1,4 +1,4 @@
-# themoviedb
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE) [![CircleCI](https://circleci.com/gh/mlabouardy/moviedb.svg?style=svg)](https://circleci.com/gh/mlabouardy/moviedb)
 
 Library to get movies & tv airing today.
 
@@ -35,7 +35,7 @@ func main() {
 }
 ```
 <div align="center">
-  <img src="example.png"/>
+  <img src="example.png" width="70%"/>
 </div>
 
 ## Tutorials
